@@ -7,13 +7,10 @@
 <body>
 <form method="POST">
     {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
+    <label for="Number">Enter the number</label>
+    <input type="text" name="Number" />
+    <button type="submit">Submit</button>
 </form>
-
-{% for i in Number %}
-<h3>{{i}}</h3>
-{% endfor %}
 
 </body>
 </html>
